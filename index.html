@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script
+   <!-- <link href="https://fonts.cdnfonts.com/css/apocalypse" rel="stylesheet"> -->
+   <link href="https://fonts.cdnfonts.com/css/sugo" rel="stylesheet">
+                
+  <script
       src="https://kit.fontawesome.com/471b9b48c1.js"
       crossorigin="anonymous"
     ></script>
     <title>Portfolio</title>
   </head>
   <body>
-
+  
     <!--Nav-->
-    <header>
-      <nav id="myNav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#section1">Skills</a></li>
-          <li><a href="#section2">Projects</a></li>
-          <li><a href="#section3">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav id="myNav">
+      <ul>
+        <li class="item-nav">
+          <img class="img-nav" style="width: 10%" src="img/profile-about.svg" alt="">
+          <a href="#about">About</a>
+        </li>
+        <li class="separator"></li>
+        <li class="item-nav">
+          <img class="img-nav" style="width: 10%" src="img/skills-svgrepo-com.svg">
+          <a href="#section1">Skills</a>
+        </li>
+        <li class="separator"></li>
+        <li class="item-nav">
+          <img class="img-nav" style="width: 10%" src="img/project-svgrepo-com.svg">
+          <a href="#section2">Projects</a>
+        </li>
+        <li class="separator"></li>
+        <li class="item-nav">
+          <img class="img-nav" style="width: 10%" src="img/contact-phone-communication-svgrepo-com.svg">
+          <a href="#section3">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
     <!--Fin Nav-->
 
     <!--Sobre Mi-->
+    <div id="particles-js"></div>
     <section id="about" class="container-about">
       <div class="container-img">
         <img class="my-img" src="img/Sin título22.png" alt="Foto mia" />
@@ -67,6 +85,10 @@
         </li>
       </div>
       
+      
+
+
+
     </section>
   </div>
     <!--Fin Sobre Mi-->
@@ -76,6 +98,7 @@
     <section class="container-skills" id="section1">
       <h2 id="skills">Skills:</h2>
       <div class="logo-skills">
+       
         <img class="logo" src="logos/html.png" alt="logo de html" />
         <img class="logo" src="logos/css.png" alt="logo de css" />
         <img class="logo" src="logos/js .png" alt="logo de js" />
@@ -83,13 +106,30 @@
         <img class="logo" src="logos/git.png" alt="logo de git" />
         <img class="logo" src="logos/sass.png" alt="logo de sass" />
       </div>
-      <div>
-        <h2>Learning:</h2>
+      <h2 id="skills">Learning:</h2>
+      <div class="logo-skills">
+      
         <img class="logo" src="logos/nodejs.png" alt="logo de nodejs" />
         <img class="logo" src="logos/sql.png" alt="logo de sql" />
         <img class="logo" src="logos/express.png"  alt="logo de express">
-        <p style="font-size: 19px;">"I am a front-end developer and I am specializing in Node.js"</p>
+    
       </div>
+      <p style="font-size: 19px;">"I am a front-end developer and I am specializing in Node.js"</p>
+
+<!--       <div class="skills-container">
+        <div class="skill">
+          <img src="logo-html.png" alt="HTML logo">
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="logo-css.png" alt="CSS logo">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="logo-javascript.png" alt="JavaScript logo">
+          <p>JavaScript</p>
+        </div>
+      </div> -->
     </section>
 
     <!--Fin Habilidades-->
@@ -122,8 +162,137 @@
             <input type="submit" value="Enviar">
           </form>
         </div>
-    </section>
+      <!--   <footer class="footer"><p>©2023 Inspired by Barbara Cassiram's portfolio</p> -->
+      </footer>
+  </section>
+</div>
     <!--Fin Contacto-->
+
 <script src="code.js"></script>
+<script src="/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+
+<script>
+  particlesJS(
+    
+    {
+      
+  "particles": {
+    "number": {
+      "value": 33,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+  )
+</script>
+
   </body>
 </html>

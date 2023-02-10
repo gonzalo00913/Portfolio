@@ -1,24 +1,41 @@
+html{
+  scroll-behavior: smooth;
+}
+#particles-js{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+} 
 :root {
     --bg-color-body: #111213;
     --color-text: #e2e3e7;
     --bg-about: #17191d;
-  
-    --size-text: 21px;
+    --size-text-p: 21px;
     --height-line: 29px;
   }
   
   * {
     margin: 0;
     padding: 0;
+    
   }
   
   body {
     background-color: var(--bg-color-body);
     color: var(--color-text);
-    font-family: monospace;
+    font-family: 'Sugo', sans-serif;
+                                                
+                                                
+    /* font-family: 'Apocalypse', sans-serif; */
   }
   h2{
     font-size: 30px;
+  }
+  p{
+    font-size: var(--size-text);
   }
   /***********************Nav Style******************************************/
   nav {
@@ -48,8 +65,8 @@
     display: block;
     color: var(--color-text);
     text-decoration: none;
-    padding: 30px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
     transition: font-size 0.2s;
   }
   
@@ -57,13 +74,33 @@
     animation-name: color;
     animation-duration: 900ms;
     animation-fill-mode: forwards;
-    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+    transform: translateX(10px);
   }
   @keyframes color {
     100% {
       color: rgb(197, 64, 16);
     }
   }
+
+  .item-nav{
+   text-align: center; 
+   margin: auto;
+   height: auto;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   margin-left:15px ;
+  }
+
+.separator {
+  border-bottom: 1px solid rgb(47, 47, 47);;
+  width: 100%;
+  margin: -5px 0;
+}
+
+
   /***********************Fil Nav Style******************************************/
   
   /********************Container Style About Me******************************/
@@ -121,6 +158,10 @@
   /********************Fin Container Style About Me******************************/
   
   /********************Style Skills******************************/
+  #skills{
+    font-size: 40px;
+   
+  }
   section {
     display: none;
     transition: height 0.5s;
@@ -135,23 +176,29 @@
     margin-left: 200px;
   }
   .logo-skills{
-   padding: 80px;
+   padding: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: left;
    
   }
   .logo {
-    height: 90px;
+     height: 90px;
     width: 90px;
     display: inline-block;
     margin: 30px;
     text-align: center;
     transition: all 0.2s ease;
     background-color:var(--bg-about);
-    border-radius: 10%;
-    
+    border-radius: 10%; 
   }
   .logo:hover {
     transform: scale(1.2);
   }
+
+  
   
   /********************Fin Style Skills******************************/
 
@@ -198,3 +245,90 @@ margin-left: 200px;
     margin-top: 150px;
 }
 /********************Fin Style contact******************************/
+
+
+/****************************Prueba**************************************/
+
+/* .SkillsComponent {
+  margin-bottom: 8vw;
+  scroll-margin-top: 14vw;
+}
+
+.Skills {
+  margin-bottom: 3.6vw;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 1.25vw;
+}
+
+.SkillsContainer {
+  position: relative;
+  height: 7.1vw;
+  display: flex;
+  margin-bottom: 48px;
+  margin-right: 5.7vw;
+  justify-content: left;
+}
+
+.SkillsContainer:hover {
+  cursor: url('../../assets/cursor.cur');
+}
+
+.Skill::before {
+  content: attr(data-line);
+}
+
+.Icon {
+  width: 85%;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.Arrow {
+  transform: rotate(145deg) scaleY(-1);
+  width: 14vw;
+  height: auto;
+  position: relative;
+  left: 35vw;
+}
+
+@media all and (max-width: 414px) {
+  .Skills {
+    margin-bottom: -10vw;
+  }
+
+  p {
+    margin-bottom: 4.2vw;
+    margin-top: 20.6vw;
+  }
+
+  .SkillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 20.8vw);
+    grid-column-gap: 7.5vw;
+    grid-row-gap: 16.5vw;
+    height: auto;
+  }
+
+  .Arrow {
+    transform: rotate(145deg) scaleY(-1);
+    width: 30vw;
+    left: 28vw;
+    margin-top: 16.4vw;
+  }
+} */
+
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 100px;
+}
+.footer p {
+  font-size: 15px;
+  
+  margin: 0;
+} */
