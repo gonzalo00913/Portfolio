@@ -1,7 +1,11 @@
- @media screen and (max-width: 500px){
+
+/*IGNORAR ESTO*/
+
+
+@media screen and (max-width: 768px){
   nav {
-   width: 120px;
- }
+    width: 120px;
+  }
   
   nav ul {
     list-style: none;
@@ -9,14 +13,13 @@
     padding: 0;
   }
 
-  
   nav a {
-
     text-decoration: none;
     padding: 20px;
     font-size: 12px;
     transition: font-size 0.2s;
   }
+  
   .item-nav {
     margin-left: 10px;
   }
@@ -26,15 +29,160 @@
     width: 90%;
     margin: -5px 0;
   }
+  
   .ban {
     width: 55px;
     display: block;
   }
+  
   .mover {
     margin-bottom: 750px;
     position: absolute;
   }
-
+  
   /**************************fin nav*************************************/
+  h1 {
+    margin-bottom: 50px;
+  }
+  
+  .container-about {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .my-img {
+    width: 300px;
+  }
+  
+  .container-img {
+    display: flex;
+    margin-left: 150px;
+  }
+  
+  .cosas {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .container-about-me {
+    margin-top: 250px;
+    margin-left: -310px;
+    width: 1100px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .redes {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+  }
+  
+  .item,
+  .item-color,
+  a {
+    margin: 10px;
+  }
+  
+  .about-me-info {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  
+  .my-text {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  strong {
+    text-shadow: 2px 2px 4px rgb(197, 64, 16);
+  }
+  
+  #my-heading {
+    font-size: 26px;
+    margin-left: 160px;
+  }
 
- }
+  section {
+    display: none;
+    transition: height 0.5s;
+  }
+  
+  #habilidades {
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .logo:hover {
+    transform: scale(1.2);
+  }
+  
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text);
+    margin-top: 120px;
+    width: 60%;
+    margin: auto;
+    margin-left: 140px;
+  }
+  
+  .container-lenguaje {
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: var(--bg-about);
+    border-radius: 10px;
+    border: 1px solid rgb(197, 64, 16);
+    box-shadow: 2px 2px 5px rgba(140, 140, 140, 0.5);
+  }
+  
+  .img-lenguage {
+    width: 10px;
+    margin-top: 25px;
+  }
+  
+  .informacion-texto {
+    margin-left: 0;
+    text-align: left;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  
+  .texto-lenguage {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+
+}
+
