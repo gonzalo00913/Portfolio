@@ -161,7 +161,7 @@ h3 {
 .item,
 .item-color,
 a {
-  margin: 10px;
+  margin: 5px;
 }
 
 .about-me-info {
@@ -436,7 +436,7 @@ i,
 a {
   font-size: 30px;
   font-family: sans-serif;
-  margin: 10px;
+  margin: 13px;
   color: white;
   text-decoration: none;
 }
@@ -444,7 +444,7 @@ a {
 .item-6:hover {
   transition: all 0.3s ease-in-out;
   transform: translateX(-115);
-  transform: translateX(-115px);
+  transform: translateX(-125px);
 }
 
 .item-7:hover {
